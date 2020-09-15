@@ -1,0 +1,58 @@
+body{
+    background:#c3cfe2;
+    }
+.profilepic{
+    padding:20px;
+    border-radius: 30px;
+    width:80%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
+    
+}
+.button{
+    padding:20px;
+}
+
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+.picture:hover .profilepic{
+    opacity:0.3;
+}
+    
+.picture:hover .middle {
+    opacity:1;
+   
+
+}
+
+
+
+
+@media (min-width:768px){
+    .profilepic{
+        width:40%;
+        
+        
+    }
+    .container{
+        display:inline;
+    }
+}
+
+@media (min-width: 1024px){
+    .profilepic{
+        width:25%;
+    }  
+} 
